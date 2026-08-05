@@ -494,7 +494,7 @@ useEffect(() => {
         <div className="project-image-wrap">
           <img
             className="project-image project-image-rag"
-            src={asset("/projects/paper-rag.png")}
+            src={asset("/images/projects/paper-rag.png")}
             alt="논문 RAG 프로젝트 Figma 화면"
           />
         </div>
