@@ -2,51 +2,53 @@ import { useEffect, useRef, useState } from "react"
 import "./App.css"
 
 function App() {
+  const asset = (path) => `${import.meta.env.BASE_URL}${path}`
+
   const snackSlides = [
   {
-    image: "/images/projects/snack/slides/slide1.png",
+    image: asset("images/projects/snack/slides/slide1.png"),
     title: "프로젝트 소개",
     description:
       "실시간 과자인식 시스템의 목표와 전체 프로젝트 구성을 소개합니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide2.png",
+    image: asset("images/projects/snack/slides/slide2.png"),
     title: "10종 과자 인식 결과",
     description:
       "학습된 Object Detection 모델이 10종의 과자를 인식하는 결과를 확인할 수 있습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide3.png",
+    image: asset("images/projects/snack/slides/slide3.png"),
     title: "모델 성능 평가",
     description:
       "다양한 환경에서 모델의 인식 성능과 정확도를 비교하며 결과를 분석했습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide4.png",
+    image: asset("images/projects/snack/slides/slide4.png"),
     title: "데이터셋 구축",
     description:
       "Roboflow 데이터셋을 활용해 이미지를 관리하고 모델 학습에 필요한 데이터를 구성했습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide5.png",
+    image: asset("images/projects/snack/slides/slide5.png"),
     title: "데이터 증강",
     description:
       "데이터 증강 기법을 적용하여 다양한 환경에서도 안정적으로 인식할 수 있도록 모델의 일반화 성능을 향상시켰습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide6.png",
+    image: asset("images/projects/snack/slides/slide6.png"),
     title: "실시간 처리 파이프라인",
     description:
       "OpenCV와 YOLOv8을 활용하여 영상 입력부터 객체 탐지, 결과 출력까지의 처리 과정을 구현했습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide7.png",
+    image: asset("images/projects/snack/slides/slide7.png"),
     title: "실시간 인식 결과",
     description:
       "웹캠 환경에서 여러 종류의 과자를 실시간으로 탐지하고 분류하는 결과를 확인했습니다.",
   },
   {
-    image: "/images/projects/snack/slides/slide8.png",
+    image: asset("images/projects/snack/slides/slide8.png"),
     title: "한계점 분석",
     description:
       "실제 테스트 과정에서 발생한 오인식 사례를 분석하고 모델의 개선 방향을 확인했습니다.",
@@ -55,31 +57,31 @@ function App() {
 
 const ragSlides = [
   {
-    image: "/images/projects/rag/slides/slide1.png",
+    image: asset("images/projects/rag/slides/slide1.png"),
     title: "로그인 페이지",
     description:
       "이메일 로그인과 데모 계정 접속을 제공하는 서비스 시작 화면을 설계했습니다.",
   },
   {
-    image: "/images/projects/rag/slides/slide2.png",
+    image: asset("images/projects/rag/slides/slide2.png"),
     title: "논문 라이브러리",
     description:
       "업로드한 논문을 검색하고 관리하며 비교할 수 있는 라이브러리 화면입니다.",
   },
   {
-    image: "/images/projects/rag/slides/slide3.png",
+    image: asset("images/projects/rag/slides/slide3.png"),
     title: "논문 리더 페이지",
     description:
       "논문을 읽으면서 AI에게 질문하고 근거를 확인할 수 있는 핵심 화면을 설계했습니다.",
   },
   {
-    image: "/images/projects/rag/slides/slide4.png",
+    image: asset("images/projects/rag/slides/slide4.png"),
     title: "논문 비교 기능",
     description:
       "두 개의 논문을 분할 화면으로 열어 내용을 동시에 확인하고 비교할 수 있도록 설계했습니다.",
   },
   {
-    image: "/images/projects/rag/slides/slide5.png",
+    image: asset("images/projects/rag/slides/slide5.png"),
     title: "근거 확인 흐름",
     description:
       "AI 답변의 근거를 확인하고 논문 원문으로 연결되는 사용자 흐름을 설계했습니다.",
@@ -184,7 +186,7 @@ useEffect(() => {
         <section className="hero" id="home">
           <img
             className="hero-background"
-            src="${import.meta.env.BASE_URL}images/projects/hero/hero-bg3.jpg"
+            src={asset("images/projects/hero/hero-bg3.jpg")}
             alt=""
             aria-hidden="true"
           />
@@ -264,7 +266,7 @@ useEffect(() => {
                 <div className="hobby-bubbles">
                   <div className="hobby-bubble hobby-bubble-movie">
                     <img
-                      src="${import.meta.env.BASE_URL}images/projects/about/movie.jpg"
+                      src={asset("images/projects/about/movie.jpg")}
                       alt="영화 보기"
                       className="hobby-bubble-image"
                     />
@@ -275,7 +277,7 @@ useEffect(() => {
 
                   <div className="hobby-bubble hobby-bubble-music">
                     <img
-                      src="${import.meta.env.BASE_URL}images/projects/about/music.png"
+                      src={asset("images/projects/about/music.png")}
                       alt="음악 듣기"
                       className="hobby-bubble-image"
                     />
@@ -286,7 +288,7 @@ useEffect(() => {
 
                   <div className="hobby-bubble hobby-bubble-cafe">
                     <img
-                      src="${import.meta.env.BASE_URL}images/projects/about/cafe.jpg"
+                      src={asset("images/projects/about/cafe.jpg")}
                       alt="카페 가기"
                       className="hobby-bubble-image"
                     />
@@ -336,7 +338,7 @@ useEffect(() => {
         <div className="project-image-wrap project-image-wrap-snack">
           <img
             className="project-image project-image-snack"
-            src="${import.meta.env.BASE_URL}images/projects/snack-detection.png"
+            src={asset("images/projects/snack-detection.png")}
             alt="실시간 과자인식 시스템 결과 화면"
           />
         </div>
@@ -492,7 +494,7 @@ useEffect(() => {
         <div className="project-image-wrap">
           <img
             className="project-image project-image-rag"
-            src="${import.meta.env.BASE_URL}images/projects/paper-rag.png"
+            src={asset("/projects/paper-rag.png")}
             alt="논문 RAG 프로젝트 Figma 화면"
           />
         </div>
