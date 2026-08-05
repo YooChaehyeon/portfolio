@@ -184,7 +184,7 @@ useEffect(() => {
         <section className="hero" id="home">
           <img
             className="hero-background"
-            src="/images/projects/hero/hero-bg3.jpg"
+            src="${import.meta.env.BASE_URL}images/projects/hero/hero-bg3.jpg"
             alt=""
             aria-hidden="true"
           />
@@ -264,7 +264,7 @@ useEffect(() => {
                 <div className="hobby-bubbles">
                   <div className="hobby-bubble hobby-bubble-movie">
                     <img
-                      src="/images/projects/about/movie.jpg"
+                      src="${import.meta.env.BASE_URL}images/projects/about/movie.jpg"
                       alt="영화 보기"
                       className="hobby-bubble-image"
                     />
@@ -275,7 +275,7 @@ useEffect(() => {
 
                   <div className="hobby-bubble hobby-bubble-music">
                     <img
-                      src="/images/projects/about/music.png"
+                      src="${import.meta.env.BASE_URL}images/projects/about/music.png"
                       alt="음악 듣기"
                       className="hobby-bubble-image"
                     />
@@ -286,7 +286,7 @@ useEffect(() => {
 
                   <div className="hobby-bubble hobby-bubble-cafe">
                     <img
-                      src="/images/projects/about/cafe.jpg"
+                      src="${import.meta.env.BASE_URL}images/projects/about/cafe.jpg"
                       alt="카페 가기"
                       className="hobby-bubble-image"
                     />
@@ -336,7 +336,7 @@ useEffect(() => {
         <div className="project-image-wrap project-image-wrap-snack">
           <img
             className="project-image project-image-snack"
-            src="/images/projects/snack-detection.png"
+            src="${import.meta.env.BASE_URL}images/projects/snack-detection.png"
             alt="실시간 과자인식 시스템 결과 화면"
           />
         </div>
@@ -492,7 +492,7 @@ useEffect(() => {
         <div className="project-image-wrap">
           <img
             className="project-image project-image-rag"
-            src="/images/projects/paper-rag.png"
+            src="${import.meta.env.BASE_URL}images/projects/paper-rag.png"
             alt="논문 RAG 프로젝트 Figma 화면"
           />
         </div>
